@@ -2,4 +2,18 @@
     ViewBag.Title = "Index";
 }
 
+<script type="text/javascript" lang="javascript">
+    //$("#story").backstretch(["_res/images/backgrounds/backgrounds_doriegreenspan.jpg","_res/images/backgrounds/backgrounds_cookie_02.jpg","_res/images/backgrounds/backgrounds_cookie_03.jpg","_res/images/backgrounds/backgrounds_cookie_04.jpg","_res/images/backgrounds/backgrounds_cookie_05.jpg"],{fade:750,duration:9000});$("#story").on("backstretch.show",function(){var c=$(this).data('backstretch').current();if(c==0){$("#storyHolder").css("opacity",1);}else{$("#storyHolder").css("opacity",0);}});var $holderMenuSets=$("#home"),$holderMenuLinks=$holderMenuSets.find('a');$holderMenuLinks.click(function(){var $this=$(this);if($this.hasClass('home')){$('#story').data('backstretch').show(0);}});var $headerMenuSets=$('#menu'),$headerMenuLinks=$headerMenuSets.find('a');$headerMenuLinks.click(function(){var $this=$(this);if($this.hasClass('selected')){}else{var $headerMenuSet=$('#menu');$headerMenuSet.find('.selected').removeClass('selected');$this.addClass('selected');if($this.hasClass('selected')){if($this.hasClass('story')){$headerMenuSet.find('.story').addClass('selected');}
+    //    if($this.hasClass('cookies')){$headerMenuSet.find('.cookies').addClass('selected');} 
+    $(document).ready(function () {
+        $.backstretch("http://dl.dropbox.com/u/515046/www/garfield-interior.jpg");
+    });
+</script>
+
 <h2>Index</h2>
+
+<section id="story">
+    @*<div class="backstretch">
+        <img />
+    </div>*@
+</section>
