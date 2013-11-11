@@ -20,11 +20,31 @@ namespace MvcApplication1
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RegisterGlobalFilters(GlobalFilters.Filters);
+            RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AuthConfig.RegisterAuth();
-            ViewEngines.Engines.Add(new MyViewEngines());
+            //AuthConfig.RegisterAuth();
+            ViewEngines.Engines.Clear();
+            ViewEngines.Engines.Add(new MyRazorViewEngines());
+        }
+
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
+
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            //routes.IgnoreRoute("");
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            //routes.IgnoreRoute("{resource}.aspx/{*pathInfo}");
+            //routes.IgnoreRoute("scripts/images/{*pathInfo}");
+            routes.MapRoute(
+                "Default",
+                "{controller}/{action}/{id}",
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional} 
+                );
         }
     }
 }

@@ -1,6 +1,9 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
-<a href="../Shop/BeurreAndSel.mvc">Beurre & Sel</a>
+<a href="Shop/BeurreAndSel">Beurre & Sel</a>
+
+@Html.ActionLink("Beurre & Sel", "Index", "Shop/BeurreAndSel", null, new { @class = "excelBtn" })
