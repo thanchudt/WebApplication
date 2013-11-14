@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#"><head>
+<meta http-equiv="Content-Type" content="" />
+<title>Beurre &amp; Sel. Gourmet cookies from Dorie Greenspan.</title>
+<meta name="DESCRIPTION" content="Beurre &amp; Sel cookies are handmade in New York City with the freshest ingredients from the beloved recipes of Dorie Greenspan, mom, baker, cookbook author and four-times James Beard Award-winner."/>
+<meta name="KEYWORDS" content=""/>
+<meta property="og:title" content="Beurre &amp; Sel. Gourmet cookies from Dorie Greenspan."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.beurreandsel.com/"/>
+<meta property="og:site_name" content="BeurreAndSel.com"/>
+<meta property="fb:admins" content="1105237335" />
+<meta property="og:image" content="http://www.beurreandsel.com/_res/images/icon.gif"/>
+<meta property="og:description" content="Beurre &amp; Sel cookies are handmade in New York City with the freshest ingredients from the beloved recipes of Dorie Greenspan, mom, baker, cookbook author and four-times James Beard Award-winner."/>
+<meta name="robots" content="" />
+<link rel="icon" href="" type="image/x-icon" />
+<link rel="shortcut icon" href="" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="_res/css/style31213.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAYJ7rjrfQvmexhJsPT43fVsc6d09YhxqA&sensor=true"></script>
+<script type="text/javascript" src="_res/js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="_res/js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="_res/js/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="_res/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="_res/js/modernizer.js"></script>
+<script>document.createElement("article");document.createElement("section");function setLocation(url){window.location.href=url;}</script>
+<!--[if lt IE 9 ]>
+<style media="screen" type="text/css">
+#header{position:static;z-index:0;}
+#containerSecondHold{display:none;}
+#menu{background:#EB1A22;}
+</style>
+<![endif]-->
+<script>var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-34481217-1']);_gaq.push(['_setDomainName','beurreandsel.com']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+</head>
+<body>
+<div id=home>
+<div id=menu>
+<div id=container>
+<section id=header>
+<section id=headerLarge>
+<div id=logoLarge class=headerView><img src="_res/images/logo_large.gif" width=284 height=87></div>
+<div id=newyork class=headerView>NEW YORK, NY</div>
+<ul class=headerView>
+<li>
+<a href=story class=story>STORY</a><br>
+<a href="#cookies" class=cookies>COOKIES</a><br>
+<a href="#catering" class=catering>CATERING</a><br>
+<a href="http://beurreandsel.com/checkout/cart/">MY CART</a></li>
+<li>
+<a href=gallery class=gallery>GALLERY</a><br>
+<a href="#press" class=press>PRESS</a><br>
+<a href="#contact" class=contact>CONTACT</a></li>
+</ul>
+</section>
+</section>
+</div>
+<div id=containerSecondHold>
+<div id=containerSecond>
+<section id=headerSecond>
+<section id=headerSmall><a href="#home" class=home><div id=logoSmall class=headerHide><img src="_res/images/logo_small.gif" width=43 height=47></div></a>
+<ul class=headerHide>
+<li>
+<a href=story class=story>STORY</a><br>
+<a href="#cookies" class=cookies>COOKIES</a></li>
+<li>
+<a href="#catering" class=catering>CATERING</a><br>
+<a href=gallery class=gallery>GALLERY</a></li>
+<li> <a href="#press" class=press>PRESS</a><br>
+<a href="#contact" class=contact>CONTACT</a></li>
+<li><a href="checkout/cart/">MY CART</a></li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+</div>
+<section id=story>
+<div id=storyHolder>
+<span class=storyIntro>Sophisticated Cookies,<br>
+Simple Happiness.</span>
+<span id=storyColumn1>Beurre &amp; Sel is built on memories of a mother and son baking cookies together. Our cookies are beautifully crafted, unusually delicious and</span>
+<span id=storyColumn2>handmade from the beloved recipes of Dorie Greenspan, mom, baker, cookbook author and four-times James Beard Award-winner.</span>
+<span class=fullStory><a href=story onclick="javascript:$('#story').data('backstretch').pause();">FULL STORY</a> &#8250;</span>
+</div>
+</section>
+<section id=cookies>
+<div id=cookiesPurchase>
+<a href="javascript:closeCookie();" class=closeCookie><img src="_res/images/spacer.gif" width=26 height=26></a>
+<a href="#" class=prev><img src="_res/images/spacer.gif" width=26 height=47></a>
+<a href="#" class=next><img src="_res/images/spacer.gif" width=26 height=47></a>
+<div class=slides_container>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/15/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_sesame_sea_salt.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/21/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_port_jammers.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/25/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_coffeecardamom.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/22/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_sables.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/13/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_cocoa_cayenne.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/23/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_chocolate_mint.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/19/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_rosemary_parmesan.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/20/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_world_peace_cookie.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/7/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_espresso_chip.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/9/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_classic_jammers.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/26/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_honey_tea.gif" width=922 height=415></div>
+<div><div class=buttonHolder><a href="javascript:void();" onclick="setLocation('http://beurreandsel.com/checkout/cart/add/uenc/aHR0cDovL3Nob3AuY29va2llYmFybnljLmNvbS9hbGwtcHJvZHVjdHMuaHRtbA,,/product/27/');return false"><img src="_res/images/spacer.gif" width=137 height=32></a></div><img src="_res/images/cookies/cookies_lavender_white_chocolate.gif" width=922 height=415></div>
+</div>
+<section id=cookiesHolder>
+<ul class=cookiesHolderList id=cookiesHolderList>
+<li><a href="#0" class=sesameseasalt>Sesame Sea Salt</a></li>
+<li><a href="#1" class=espressochip>Espresso Chip</a></li>
+<li><a href="#2" class=coffeecardamom>Coffee Cardamom</a></li>
+<li><a href="#3" class=sables>Sables</a></li>
+<li><a href="#4" class=cocoacayenne>Cocao Cayenne</a></li>
+<li><a href="#5" class=chocolatemint>Chocolate Mint</a></li>
+<li><a href="#6" class=rosemaryparmesan>Rosemary Parmesan</a></li>
+<li><a href="#7" class=worldpeacecookie>World Peace Cookie</a></li>
+<li><a href="#8" class=coconutlime>Coconut Lime</a></li>
+<li><a href="#9" class=classicjammers>Classic Jammers</a></li>
+<li><a href="#10" class=honeyteajammers>Honey & Tea Jammer</a></li>
+<li><a href="#11" class=lavenderwhite>Lavender-White Chocolate</a></li>
+</ul>
+</section>
+</div>
+</section>
+<section id=catering>
+<div id=cateringHolder>
+<h4>Whether it’s a selection of cookies for a board meeting or a birthday party, wedding favors, client gifts or special treats for special occasions, we’re happy to help you make your event even sweeter.</h4>
+<div class=contact>CONTACT US<br><br>
+<span class=title>EMAIL</span> <a href="mailto:catering@beurreandsel.com">catering@beurreandsel.com</a><br>
+</div>
+</div>
+</section>
+<section id=press>
+<div id=pressHolder>
+<div style=padding-top:70px><img src="_res/images/press/press.gif" width=699 height=310 border=0 usemap="#MapPress"/>
+<map name=MapPress id=MapPress>
+<area coords="53,1,327,47" href="http://dinersjournal.blogs.nytimes.com/2012/06/20/beurre-sel-cookies-coming-to-two-markets/" target=_blank />
+<area coords="407,3,675,46" href="http://www.washingtonpost.com/blogs/all-we-can-eat/post/dorie-greenspan-shop-owner-the-deets/2012/06/21/gJQA3B7wsV_blog.html" target=_blank />
+<area coords="1,110,181,194" href="http://newyork.seriouseats.com/2012/09/beurre-and-sel-dorie-greenspan-cookie-opening-essex-street-market.html" target=_blank />
+<area coords="256,127,454,182" href="http://food52.com/blog/4652_making_cookies_with_dorie_greenspan" target=_blank />
+<area coords="535,116,700,187" href="http://www.cntraveler.com/daily-traveler/2012/09/beurre-and-sel-new-york-new-cookies-dorie-greenspan#slide=1" target=_blank />
+<area coords="55,251,327,317" href="http://www.bonappetit.com/blogsandforums/blogs/badaily/2012/09/dorie-greenspan-cookie-post.html" target=_blank />
+<area coords="405,262,672,305" href="http://www.dailycandy.com/new-york/article/135460/Beurre-Sel-Cookies" target=_blank />
+</map>
+</div>
+</div>
+</section>
+<section id=contact>
+<div id=mapHolder>
+<div id=mapLeft><h4>ESSEX STREET MARKET</h4>
+<div class=address>120 essex — new york, ny 10002<br>
+<span class=sub>STORE</span> 917.623.3239 <span class=sub>| TUES-SAT 11am-7pm SUN 11am-6pm</span>
+</div>
+<div id=map_canvasL></div>
+</div>
+<div id=mapRight><h4>LA MARQUETA</h4>
+<div class=address>1590 park avenue (115th street)<br>new york, ny 10029 <span class=sub>| MON-SAT 10am-5pm</span>
+</div>
+<div id=map_canvasR></div>
+</div>
+</div>
+</section>
+<section id=footer>
+<div id=footerHolder>
+<div id=mail>
+<a href="mailto:info@beurreandsel.com">EMAIL US</a><br><br>
+<ul id=social>
+<li><a href="https://www.facebook.com/BeurreAndSel" target=_blank><img src="_res/images/social_facebook.gif" width=11 height=16>FACEBOOK</a></li><li><a href="https://twitter.com/BeurreAndSel" target=_blank><img src="_res/images/social_twitter.gif" width=11 height=16>TWITTER</a></li></ul>
+</div>
+<div id=logo><a href="#home" class=home><img src="_res/images/logo_footer.gif" width=252 height=43></a></div>
+<div id=terms>
+<a href=terms>TERMS &amp; CONDITIONS</a><br>
+<a href=privacy>PRIVACY POLICY</a><br><br>
+DESIGN BY <a href="http://mnumnt.us" target=_blank>MONUMENT</a></div>
+</div>
+</section>
+</div>
+<script>function closeCookie(){$("#cookiesPurchase").find(".slides_container").css("display","none");};$(function(){$("#cookiesPurchase").slides({effect:'slide, fade',fadeSpeed:0,paginationClass:'cookiesHolderList',generatePagination:false});$("#cookiesPurchase").find(".slides_container").css("display","none");});$("#cookiesHolderList").find("a").click(function(){$("#cookiesPurchase").find(".slides_container").css("display","block");$("#cookiesPurchase").find(".prev").css("display","block");$("#cookiesPurchase").find(".next").css("display","block");});function initializeMap(){var styles=[{featureType:"all",stylers:[{hue:"#EC1B23"},{saturation:0}]},{featureType:"road",elementType:"geometry",stylers:[{lightness:100},{visibility:"simplified"}]},{featureType:"road",stylers:[{visibility:"on"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"weight":0.1}]}];var styledMap=new google.maps.StyledMapType(styles,{name:"Styled Map"});var mapOptionsL={zoom:15,center:new google.maps.LatLng(40.71921,-73.987701),mapTypeControl:false,title:"Beurre &amp; Sel",clickable:true,mapTypeControlOptions:{mapTypeIds:[google.maps.MapTypeId.ROADMAP,'map_style']},navigationControl:false,navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL},zoomControl:true,scrollwheel:false};var mapOptionsR={zoom:15,center:new google.maps.LatLng(40.797776,-73.944544),mapTypeControl:false,title:"Beurre &amp; Sel",clickable:true,mapTypeControlOptions:{mapTypeIds:[google.maps.MapTypeId.ROADMAP,'map_style']},navigationControl:false,navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL},zoomControl:true,scrollwheel:false};var mapL=new google.maps.Map(document.getElementById('map_canvasL'),mapOptionsL);var mapR=new google.maps.Map(document.getElementById('map_canvasR'),mapOptionsR);var image='_res/images/bsMarker.png';var myLatLngL=new google.maps.LatLng(40.71921,-73.987701);var myLatLngR=new google.maps.LatLng(40.797776,-73.944544);var bsMarkerL=new google.maps.Marker({position:myLatLngL,map:mapL,icon:image,title:'Beurre &amp; Sel'});var bsMarkerR=new google.maps.Marker({position:myLatLngR,map:mapR,icon:image,title:'Beurre &amp; Sel'});google.maps.event.addListener(bsMarkerL,'click',function(){window.open('http://goo.gl/maps/ZntMM','_blank');});google.maps.event.addListener(bsMarkerR,'click',function(){window.open('http://goo.gl/maps/Hl7nM','_blank');});mapL.mapTypes.set('map_style',styledMap);mapL.setMapTypeId('map_style');mapR.mapTypes.set('map_style',styledMap);mapR.setMapTypeId('map_style');}
+initializeMap();$(window).scroll(function(){var doc=document.documentElement,body=document.body;var left=(doc&&doc.scrollLeft||body&&body.scrollLeft||0);var top=(doc&&doc.scrollTop||body&&body.scrollTop||0);if(top>414){$("#containerSecondHold").css('margin-top',0);$("#logoSmall").removeClass("headerHide");$("#logoSmall").addClass("headerView");$("#headerSmall").find("ul").removeClass("headerHide");$("#headerSmall").find("ul").addClass("headerView");}else{$("#containerSecondHold").css('margin-top',-63);$("#logoSmall").css('display','block');$("#logoSmall").removeClass("headerView");$("#logoSmall").addClass("headerHide");$("#headerSmall").find("ul").removeClass("headerView");$("#headerSmall").find("ul").addClass("headerHide");}});var doc2=document.documentElement,body=document.body;var starter=(doc2&&doc2.scrollTop||body&&body.scrollTop||0);if(starter>414){$("#containerSecondHold").css('margin-top',0);$("#logoSmall").css('display','block');$("#logoSmall").removeClass("headerHide");$("#logoSmall").addClass("headerView");$("#newyork").removeClass("headerView");$("#newyork").addClass("headerHide");$("#headerSmall").find("ul").removeClass("headerHide");$("#headerSmall").find("ul").addClass("headerView");}
+$(document).ready(function(){$('a[href*="#"]').live('click',function(){if(this.hash){$.bbq.pushState('#/'+this.hash.slice(1));return false;}});$(window).bind('hashchange',function(event){var tgt=location.hash.replace(/^#\/?/,'');if(document.getElementById(tgt)){$.smoothScroll({offset:-63,scrollTarget:'#'+tgt});}});$(window).trigger('hashchange');});$(document).ready(function(){$window=$(window);$('section[data-type="background"]').each(function(){var $bgobj=$(this);$(window).scroll(function(){var yPos=-($window.scrollTop()/$bgobj.data('speed'));var coords='50% '+yPos+'px';$bgobj.css({backgroundPosition:coords});});});$('section[data-type="foreground"]').each(function(){var $bgobj2=$(this);$(window).scroll(function(){var yPos2=-($window.scrollTop()/$bgobj2.data('speed'));var coords2=yPos2+'px';});});});</script>
+<script>$("#story").backstretch(["_res/images/backgrounds/backgrounds_doriegreenspan.jpg","_res/images/backgrounds/backgrounds_cookie_02.jpg","_res/images/backgrounds/backgrounds_cookie_03.jpg","_res/images/backgrounds/backgrounds_cookie_04.jpg","_res/images/backgrounds/backgrounds_cookie_05.jpg"],{fade:750,duration:9000});$("#story").on("backstretch.show",function(){var c=$(this).data('backstretch').current();if(c==0){$("#storyHolder").css("opacity",1);}else{$("#storyHolder").css("opacity",0);}});var $holderMenuSets=$("#home"),$holderMenuLinks=$holderMenuSets.find('a');$holderMenuLinks.click(function(){var $this=$(this);if($this.hasClass('home')){$('#story').data('backstretch').show(0);}});var $headerMenuSets=$('#menu'),$headerMenuLinks=$headerMenuSets.find('a');$headerMenuLinks.click(function(){var $this=$(this);if($this.hasClass('selected')){}else{var $headerMenuSet=$('#menu');$headerMenuSet.find('.selected').removeClass('selected');$this.addClass('selected');if($this.hasClass('selected')){if($this.hasClass('story')){$headerMenuSet.find('.story').addClass('selected');}
+if($this.hasClass('cookies')){$headerMenuSet.find('.cookies').addClass('selected');}
+if($this.hasClass('accessories')){$headerMenuSet.find('.accessories').addClass('selected');}
+if($this.hasClass('catering')){$headerMenuSet.find('.catering').addClass('selected');}
+if($this.hasClass('specialites')){$headerMenuSet.find('.specialites').addClass('selected');}
+if($this.hasClass('gallery')){$headerMenuSet.find('.gallery').addClass('selected');}
+if($this.hasClass('press')){$headerMenuSet.find('.press').addClass('selected');}
+if($this.hasClass('contact')){$headerMenuSet.find('.contact').addClass('selected');}}}});$(".cranberry5spice").unbind("click");</script>
+<!--[if lt IE 7 ]>
+<script src="_res/js/dd_belatedpng.js"></script>
+<script> DD_belatedPNG.fix('img, .png_bg'); </script>
+<![endif]-->
+<!--[if lt IE 8 ]>
+<style media="screen" type="text/css">
+#menu{background:#EB1A22;background-color:#EB1A22;}
+#logoLarge img{position:static;display:block;opacity:1;filter: alpha(opacity = 100);zoom: 1;}
+#logoLarge {position:static;z-index:1;zoom: 1;}
+</style>
+<![endif]-->
+</body>
+</html>
