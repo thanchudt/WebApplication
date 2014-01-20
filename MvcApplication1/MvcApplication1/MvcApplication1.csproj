@@ -162,7 +162,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Shop\Controllers\BeurreAndSelController.cs" />
+    <Compile Include="Areas\Shop\Controllers\StoryController.cs" />
     <Compile Include="Areas\Shop\ShopAreaRegistration.cs" />
+    <Compile Include="Areas\WorldMap\Controllers\WorldMapController.cs" />
+    <Compile Include="Areas\WorldMap\WorldMapAreaRegistration.cs" />
     <Compile Include="Common\MyRazorViewEngines.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -175,7 +178,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Style_beurreandsel.css" />
+    <Content Include="Content\beurreandsel_story.css" />
+    <Content Include="Content\beurreandsel.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -236,13 +240,33 @@
     <Content Include="Areas\Shop\Views\Web.config" />
     <Content Include="Areas\Shop\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Shop\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Shop\Views\Story\Index.cshtml" />
+    <Content Include="Areas\WorldMap\Views\WorldMap\Index.cshtml" />
+    <Content Include="Areas\WorldMap\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\WorldMap\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\WorldMap\Views\Web.config" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\backgrounds\backgrounds_cookie_02.jpg" />
     <Content Include="Images\backgrounds\backgrounds_cookie_03.jpg" />
     <Content Include="Images\backgrounds\backgrounds_cookie_04.jpg" />
     <Content Include="Images\backgrounds\backgrounds_cookie_05.jpg" />
     <Content Include="Images\backgrounds\backgrounds_doriegreenspan.jpg" />
+    <Content Include="Images\cookies.gif" />
+    <Content Include="Images\cookies\cookies_chocolate_mint.gif" />
+    <Content Include="Images\cookies\cookies_classic_jammers.gif" />
+    <Content Include="Images\cookies\cookies_cocoa_cayenne.gif" />
+    <Content Include="Images\cookies\cookies_coffeecardamom.gif" />
+    <Content Include="Images\cookies\cookies_espresso_chip.gif" />
+    <Content Include="Images\cookies\cookies_honey_tea.gif" />
+    <Content Include="Images\cookies\cookies_lavender_white_chocolate.gif" />
+    <Content Include="Images\cookies\cookies_port_jammers.gif" />
+    <Content Include="Images\cookies\cookies_rosemary_parmesan.gif" />
+    <Content Include="Images\cookies\cookies_sables.gif" />
+    <Content Include="Images\cookies\cookies_sesame_sea_salt.gif" />
+    <Content Include="Images\cookies\cookies_world_peace_cookie.gif" />
     <Content Include="Images\logo_large.gif" />
+    <Content Include="Images\press\press.gif" />
+    <Content Include="Images\spacer.gif" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -302,6 +326,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Shop\Models\" />
+    <Folder Include="Areas\WorldMap\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

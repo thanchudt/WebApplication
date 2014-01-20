@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "North America Map";
+}
+
+<div align="center"> 
+<span class="v2"><b>Click on a country for a more detailed map, or try our 
+<a href="/atlas/mapindex.html">map index.</a></b></span><br><br>
+<img 
+    @*src="http://i.infopls.com/images/mapnorthamerica.gif" *@
+    src="/images/mapnorthamerica.gif" 
+    usemap="#mapnorthamerica.gif" width="510" height="383" border="0">
+<map name="mapnorthamerica.gif"> 
+  <area shape="poly" coords="253,348,253,359,324,359,329,364,333,368,335,366,344,372,357,375,360,371,366,365,372,367,371,370,374,371,377,367,367,362,354,368,341,362,340,358,373,358,373,348,341,348,340,340,334,338,313,341,315,337,315,329,302,333,302,336,305,341,299,342,294,348" href="/atlas/centralamerica.html" alt="Central America" title="Central America">
+<area shape="poly" coords="70,56,83,70,107,81,123,82,121,88,134,84,138,83,145,85,153,90,158,95,188,55,181,46,145,46,140,51,133,47,123,49,116,50,120,56,118,65,125,74,119,78,95,72,78,61" href="/atlas/usa.html" alt="United States" title="United States">
+<area shape="poly" coords="377,245,384,230,432,230,432,240,385,240" href="/atlas/country/bermuda.html" alt="Bermuda" title="Bermuda">
+<area shape="poly" coords="328,304,343,296,349,279,359,279,381,291,403,286,475,286,475,296,436,296,455,314,445,327,435,306,396,314,367,320,363,317,366,308,346,302,338,307" href="/atlas/caribbean.html" alt="Caribbean" title="Caribbean">
+<area shape="poly" coords="184,255,192,255,207,264,221,265,221,263,227,265,234,270,236,276,242,279,249,276,258,286,259,291,269,294,268,311,273,324,284,332,298,328,302,324,302,317,318,311,317,318,317,327,302,333,304,339,299,342,294,346,284,341,275,344,239,332,230,323,232,317,227,310,221,310,220,300,213,295,214,289,201,275,198,264,192,261,193,268,198,272,198,278,203,287,205,293,212,304,204,300,200,297,200,292,189,280,194,279,187,269,185,261" href="/atlas/mexico.html" alt="Mexico" title="Mexico">
+<area shape="poly" coords="176,168,176,180,167,197,168,202,165,208,168,223,172,240,184,254,190,254,206,263,220,265,220,263,227,264,236,270,237,275,243,278,248,275,260,287,260,291,269,293,269,286,284,275,305,276,300,272,309,269,320,269,325,268,334,272,336,282,345,289,348,280,338,266,337,258,354,233,348,216,353,222,353,217,355,213,355,209,360,203,365,197,362,187,370,179,364,169,360,169,358,180,345,186,337,198,323,210,318,208,320,199,317,193,298,182,289,185,272,180,250,182" href="/atlas/usa.html" alt="United States" title="United States">
+<area shape="poly" coords="160,94,189,56,193,64,196,61,210,64,230,77,228,60,220,63,217,57,224,49,230,40,280,4,283,19,280,26,283,27,281,34,285,48,291,54,300,59,302,58,310,61,315,64,318,70,321,68,331,71,332,81,322,79,334,87,336,92,325,91,335,97,342,103,357,113,358,117,367,120,373,118,376,121,380,121,389,131,389,135,395,137,396,134,408,143,395,152,383,172,378,179,374,178,376,169,369,175,365,168,361,169,357,180,345,186,336,198,324,208,320,207,322,199,320,193,299,182,288,184,273,179,249,181,175,167,169,154,174,151,172,141,163,143,163,133,167,122,163,104" href="/atlas/canada.html" alt="Canada" title="Canada">
+<area shape="poly" coords="289,2,344,1,345,6,356,5,356,9,351,11,356,16,361,9,365,19,363,26,368,39,368,46,383,73,374,78,358,71,347,65,345,55,341,61,340,52,337,50,331,52,331,45,326,45,321,41,304,32,295,36,288,33,286,28,291,20,285,18,284,9" href="/atlas/greenland.html" alt="Greenland" title="Greenland"></map>
+<!-- <MAP NAME="mapnorthamerica">
+<AREA SHAPE=POLY COORDS="190,53,159,95,161,141,174,166,245,181,274,179,289,184,298,180,317,192,321,199,319,207,322,210,331,201,340,194,346,184,359,182,358,168,363,168,371,179,381,182,391,162,397,148,410,144,402,131,393,132,387,129,378,118,370,116,359,116,341,103,331,69,288,50,283,27,283,22,282,7,282,4,258,15,254,25,230,36,225,43,216,55,212,61,192,61,188,56,194,61,194,61" HREF="/atlas/canada.html" ALT="Canada">
+<AREA SHAPE=POLY COORDS="181,254,171,231,163,209,175,174,178,171,182,173,182,168,242,181,274,180,288,183,308,186,317,210,352,185,360,171,369,179,365,193,353,216,355,234,336,259,348,279,345,290,334,279,326,268,304,269,305,278,289,276,278,279,269,294,260,292,259,287,249,275,240,279,236,275,235,271,228,264,222,263,220,268,184,255,178,249,178,249" HREF="/atlas/usa.html" ALT="United States">
+<AREA SHAPE=POLY COORDS="70,54,103,74,122,77,117,67,114,49,117,49,139,48,144,44,181,46,189,54,159,92,137,84,126,92,120,89,71,57,72,57" HREF="/atlas/usa.html" ALT="United States">
+<AREA SHAPE=POLY COORDS="185,262,189,277,202,297,211,312,214,299,218,299,226,311,226,320,251,338,268,344,273,345,286,341,294,349,298,341,304,341,300,336,303,332,315,328,317,328,323,315,318,310,299,317,302,325,283,331,274,322,268,315,267,295,247,273,182,255" HREF="/atlas/mexico.html" ALT="Mexico">
+
+  <AREA SHAPE=POLY COORDS="373,371,364,365,359,377,327,369,328,360,318,355,299,351,294,346,311,331,315,340,338,337,342,341,341,358,354,368,364,360,371,360,375,365,371,370,365,366" HREF="/atlas/centralamerica.html" ALT="Central America">
+  <AREA SHAPE=POLY COORDS="328,307,358,321,421,317,435,319,440,328,453,324,458,312,445,272,420,260,363,259,355,275,354,289,348,295,332,297,323,304,328,308" HREF="/atlas/caribbean.html" ALT="The Caribbean">
+  <AREA SHAPE=POLY COORDS="374,222,435,222,429,248,371,248,373,222" HREF="/atlas/country/bermuda.html" ALT="Bermuda">
+  <AREA SHAPE=POLY COORDS="401,180,477,180,478,153,396,153,401,178" HREF="/atlas/country/piermiq.html" ALT="St. Pierre and Miquelon">
+  <AREA SHAPE=POLY COORDS="347,2,346,6,358,6,367,14,366,31,370,39,369,48,387,75,373,78,351,70,336,55,325,47,318,40,305,32,297,38,286,32,284,31,280,4,285,0" HREF="/atlas/greenland.html" ALT="Greenland">
+
+</MAP>
+
+ -->
+
+<br>
+<font face="verdana, sans-serif" size="3" color="#333399"><b>Country Maps — North America</b><br>
+@*<table cellpadding="3" cellspacing="3" align="center" width="90%" class="atcountrytable">
+<tbody><tr><td width="30%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/canada.html">Canada Map</a></div></td>
+<td width="30%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/mexico.html">Mexico Map</a></div></td>
+<td width="30%" align="left" valign="top" map=""><div class="atcountrylist">
+<a href="/atlas/usa.html">United States Map</a></div></td></tr></tbody></table>*@
+<br>
+
+@*<font face="verdana, sans-serif" size="3" color="#333399"><b>Regional Maps — North America</b><br>
+<table cellpadding="3" cellspacing="3" align="center" width="90%" class="atcountrytable">
+<tbody><tr><td width="25%" align="left" valign="top">
+</td>
+<td width="25%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/centralamerica.html">Central America Map</a></div></td>
+<td width="25%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/caribbean.html">Caribbean Map</a></div></td>
+<td width="25%" align="left" valign="top">
+</td>
+</tr></tbody></table>*@
+<br>
+
+
+
+@*<font face="verdana, sans-serif" size="3" color="#333399"><b>Territory and Dependency Maps — North America</b><br>
+<table cellpadding="3" cellspacing="3" align="center" width="100%" class="atcountrytable">
+<tbody><tr><td width="25%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/greenland.html">Greenland (Den.) Map </a></div></td>
+<td width="25%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/country/bermuda.html">Bermuda (U.K.) Map</a></div></td>
+<td width="25%" align="left" valign="top"><div class="atcountrylist">
+<a href="/atlas/country/piermiq.html">St. Pierre and Miquelon (Fr.) Map</a></div></td></tr></tbody></table>*@
+
+
+
+<br>
+<!-- special condition for Palestinian Maps to x-reference each other -->
+
+<!-- special condition for Iraq -->
+
+
+
+<br><br>
+<div align="center">
+<font face="verdana, sans-serif" size="3" color="#333399"><b>More Geographic Information</b><br>
+
+<table cellpadding="1" cellspacing="0" border="0" bgcolor="#666699"><tbody><tr><td align="left">
+<table width="380" cellspacing="0" cellpadding="6" border="0" bgcolor="#ccccff"><tbody><tr><td>
+<font face="verdana" size="2" color="#000066">
+<li style="line-height : 150%"><a href="/countries.html">Country Profiles</a><br>
+</li><li style="line-height : 150%"><a href="/ipa/A0201477.html">Flags</a><br>
+</li><li style="line-height : 150%"><a href="/ipa/A0873835.html">World Geography</a><br>
+</li></font><li style="line-height : 150%"><font face="verdana" size="2" color="#000066"><a href="/ipa/A0004372.html">World Statistics</a>
+</font><br></li></td>
+<td align="left"><font face="verdana" size="2" color="#000066">
+<li style="line-height : 150%"><a href="/states.html">U.S. State Profiles</a><br>
+</li><li style="line-height : 150%"><a href="/ipa/A0108476.html">U.S. Cities</a><br>
+</li><li style="line-height : 150%"><a href="/ipa/A0873836.html">U.S. Geography</a><br>
+</li></font><li style="line-height : 150%"><font face="verdana" size="2" color="#000066"><a href="/ipa/A0004920.html">U.S. Statistics</a>
+</font><br>
+</li></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+</font></div><font face="verdana, sans-serif" size="3" color="#333399">
+
+ 
+
+<br><br>
+
+<table width="150"><tbody><tr><td align="center">
+<a href="/atlas/index.html" class="leftnav"><img 
+    @*src="http://i.infopls.com/images/tmpl/smallmapworld.gif" *@
+    src="/images/tmpl/smallmapworld.gif"
+    border="0"></a></td>
+</tr>
+<tr><td align="center">
+<a href="../WorldMap/index"><font face="verdana, sans-serif" size="1"><b>World Map</b></font></a></td></tr></tbody></table>
+</font></font></font></font></div>

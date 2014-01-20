@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Beurre &amp; Sel. Our Story.</title>
+<meta name="DESCRIPTION" content="Whether they’re sweet cookies baked in our signature rings or savory cookies from our Cocktail Collection, all of our cookies are made just as Dorie Greenspan has made them …"/>
+<meta name="KEYWORDS" content="Beurre &amp; Sel, Dorie Greenspan, cookies, James Beard, New York, butter and salt, Essex Street Market, La Marqueta, East Harlem, Daniel Seehoff, Joshua Greenspan"/>
+<meta property="og:title" content="Beurre &amp; Sel. Our Story."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.beurreandsel.com/"/>
+<meta property="og:site_name" content="BeurreAndSel.com"/>
+<meta property="fb:admins" content="1105237335" />
+<meta property="og:image" content="http://www.beurreandsel.com/_res/images/icon.gif"/>
+<meta property="og:description" content="Whether they’re sweet cookies baked in our signature rings or savory cookies from our Cocktail Collection, all of our cookies are made just as Dorie Greenspan has made them …"/>
+<link rel="stylesheet" type="text/css" href="../_res/css/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="../_res/js/jquery.smooth-scroll.min.js"></script>
+<script type="text/javascript" src="../_res/js/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="../_res/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="../_res/js/modernizer.js"></script>
+<script type="text/javascript">
+document.createElement("section");
+</script>
+</head>
+<body>
+<div id="home">
+<div id="containerSecondHold">
+<div id="containerSecond">
+<section id="headerSecond">
+<section id="headerSmall"><a href="../#home"><div id="logoSmall"><img src="../_res/images/logo_small.gif" alt="Beurre &amp; Sel" width="43" height="47"></div></a>
+<ul>
+<li>
+<a href="#story" class="story selected">STORY</a><br>
+<a href="../#cookies" class="cookies">COOKIES</a></li>
+<li> <!--<a href="../#accessories" class="accessories">ACCESSORIES</a><br>-->
+<a href="../#catering" class="catering">CATERING</a><!--</li>
+<li><a href="../#specialites" class="specialites">SPECIALITES</a>--><br>
+<a href="../gallery" class="gallery">GALLERY</a></li>
+<li> <a href="../#press" class="press">PRESS</a><br>
+<a href="../#contact" class="contact">CONTACT</a></li>
+<li><a href="http://beurreandsel.com/checkout/cart/">MY CART</a></li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+<section id="storyFull">
+<div id="storyFullImage"></div>
+<div id="storyHolderFull"><span class="storyIntroFull"><p>Whether they’re sweet cookies baked in our signature rings or savory cookies from our Cocktail Collection, all of our cookies are made just as Dorie has made them for decades in her narrow New York City kitchen using local butter and hand-harvested French sea salt … the butter and salt that give Beurre & Sel its name and its goodness.</p>
+<p>Cookies are our family’s way of holding on to memories and they’re our way of creating new memories for you, ones you can treasure and share.</p></span>
+<span id="storyColumn1"><p>Late in the afternoon I’d start pestering Mom to stop working so we could start baking. And it wasn’t because I was desperate to learn the secrets of making great cookies or even that I cared about plain old baking 101 – it really had everything to do with girls. At night I’d be working at Spa, a New York City club, and let’s just say that showing up with cookies was good for my professional life and not so bad for my social life either.</p>
+<p>My parents weren’t thrilled that I’d taken to promoting nightclubs post-college and I’m sure that getting in at 5am and waking up at 2pm didn’t give them much hope for me and my future.</p>
+<p>But every Tuesday, Mom and I would bake cookies. We’d mix the dough, roll it into logs and cut the cookies and often we wouldn’t finish until just before I’d run to dinner or catch the subway down to the club.</p>
+<p>The real trick was holding onto the cookies long enough to actually get into the club. If I wasn’t careful, the doormen and bouncers would finish them before I even made it up the steps. Eventually I had to resort to two separate containers, just so I’d have enough. Funny, but Mom could never quite get why everyone treated her so well whenever she’d show up.</p></span>
+<span id="storyColumn2"><p>Of course, I never forgot the cookies. But I also never forgot how happy baking the cookies with my mom made me and how happy the cookies made my friends.</p>
+<p>Beurre & Sel is built on these memories. It is our way of keeping these wonderful memories and of creating them for you, so that you can treasure them too.</p>
+<p>Everyone has a cookie memory. Whether it’s the warm, just baked smell wafting through Grandma’s house or the first time you used the EZ Bake oven as a kid. Beurre & Sel is our cookie memory. In part, it is my memory of growing up with my mom’s cookies – baking, tasting, experimenting and ultimately sharing them with my friends. But really it is her lifetime of baking that has created those memories for us to share. </p>
+<span class="storyAuthor">...</span>
+<span class="storyAuthor">Josh Greenspan</span>
+<span class="storyAuthorTitle">COOKIE MONSTER</span>
+</span>
+<div id="storyBack">&#8249; <a href="../">BACK TO MAIN</a></div>
+</div>
+</section>
+<section id="footer">
+<div id="footerHolder">
+<div id="mail">
+<a href="mailto:info@beurreandsel.com">EMAIL US</a><br><br>
+<ul id="social">
+<li><a href="https://www.facebook.com/BeurreAndSel" target="_blank"><img src="../_res/images/social_facebook.gif" width="11" height="16">FACEBOOK</a></li><li><a href="https://twitter.com/BeurreAndSel" target="_blank"><img src="../_res/images/social_twitter.gif" width="11" height="16">TWITTER</a></li></ul>
+</div>
+<div id="logo"><a href="#home"><img src="../_res/images/logo_footer.gif" width="252" height="43"></a></div>
+<div id="terms">
+<a href="../terms">TERMS & CONDITIONS</a><br>
+<a href="../privacy">PRIVACY POLICY</a><br><br>
+DESIGN BY <a href="http://mnumnt.us" target="_blank">MONUMENT</a></div>
+</div>
+</section>
+</div>
+<script type="text/javascript">
+$("#storyFullImage").backstretch("../_res/images/story_extended.jpg");
+$("#containerSecondHold").css('margin-top', 0);
+</script>
+</body>
+</html>
