@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PriceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="PriceModelStoreContainer">
+          <EntitySet Name="Currency" EntityType="PriceModel.Store.Currency" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Item" EntityType="PriceModel.Store.Item" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ItemType" EntityType="PriceModel.Store.ItemType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Price" EntityType="PriceModel.Store.Price" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UserProfile" EntityType="PriceModel.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_dbo_Item_dbo_Item_ItemTypeId" Association="PriceModel.Store.FK_dbo_Item_dbo_Item_ItemTypeId">
+            <End Role="ItemType" EntitySet="ItemType" />
+            <End Role="Item" EntitySet="Item" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_ItemType_dbo_ItemType_ParentId" Association="PriceModel.Store.FK_dbo_ItemType_dbo_ItemType_ParentId">
+            <End Role="ItemType" EntitySet="ItemType" />
+            <End Role="ItemType1" EntitySet="ItemType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Price_dbo_Currency_Id" Association="PriceModel.Store.FK_dbo_Price_dbo_Currency_Id">
+            <End Role="Currency" EntitySet="Currency" />
+            <End Role="Price" EntitySet="Price" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Price_dbo_Price_ItemId" Association="PriceModel.Store.FK_dbo_Price_dbo_Price_ItemId">
+            <End Role="Item" EntitySet="Item" />
+            <End Role="Price" EntitySet="Price" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Price_dbo_UserProfile_Id" Association="PriceModel.Store.FK_dbo_Price_dbo_UserProfile_Id">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Price" EntitySet="Price" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ItemTypeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ItemType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+        </EntityType>
+        <EntityType Name="Price">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Value" Type="float" Nullable="false" />
+          <Property Name="ItemId" Type="int" Nullable="false" />
+          <Property Name="CurrencyId" Type="int" Nullable="false" />
+          <Property Name="UploadByUserId" Type="int" Nullable="false" />
+          <Property Name="UploadDate" Type="datetime" Nullable="false" />
+          <Property Name="EffStartDate" Type="datetime" Nullable="false" />
+          <Property Name="EffEndDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_dbo_Item_dbo_Item_ItemTypeId">
+          <End Role="ItemType" Type="PriceModel.Store.ItemType" Multiplicity="1" />
+          <End Role="Item" Type="PriceModel.Store.Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="ItemTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_ItemType_dbo_ItemType_ParentId">
+          <End Role="ItemType" Type="PriceModel.Store.ItemType" Multiplicity="0..1" />
+          <End Role="ItemType1" Type="PriceModel.Store.ItemType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ItemType1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Price_dbo_Currency_Id">
+          <End Role="Currency" Type="PriceModel.Store.Currency" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Price" Type="PriceModel.Store.Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="CurrencyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Price_dbo_Price_ItemId">
+          <End Role="Item" Type="PriceModel.Store.Item" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Price" Type="PriceModel.Store.Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Price_dbo_UserProfile_Id">
+          <End Role="UserProfile" Type="PriceModel.Store.UserProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Price" Type="PriceModel.Store.Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="UploadByUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PriceModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PriceEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="UserProfiles" EntityType="PriceModel.UserProfile" />
+          <EntitySet Name="Currencies" EntityType="PriceModel.Currency" />
+          <EntitySet Name="Items" EntityType="PriceModel.Item" />
+          <EntitySet Name="ItemTypes" EntityType="PriceModel.ItemType" />
+          <EntitySet Name="Prices" EntityType="PriceModel.Price" />
+          <AssociationSet Name="FK_dbo_Price_dbo_Currency_Id" Association="PriceModel.FK_dbo_Price_dbo_Currency_Id">
+            <End Role="Currency" EntitySet="Currencies" />
+            <End Role="Price" EntitySet="Prices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Item_dbo_ItemType_Id" Association="PriceModel.FK_dbo_Item_dbo_ItemType_Id">
+            <End Role="ItemType" EntitySet="ItemTypes" />
+            <End Role="Item" EntitySet="Items" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Price_dbo_Item_Id" Association="PriceModel.FK_dbo_Price_dbo_Item_Id">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="Price" EntitySet="Prices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_Price_dbo_UserProfile_Id" Association="PriceModel.FK_dbo_Price_dbo_UserProfile_Id">
+            <End Role="UserProfile" EntitySet="UserProfiles" />
+            <End Role="Price" EntitySet="Prices" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_ItemType_dbo_ItemType_ParentId" Association="PriceModel.FK_dbo_ItemType_dbo_ItemType_ParentId">
+            <End Role="ItemType" EntitySet="ItemTypes" />
+            <End Role="ItemType1" EntitySet="ItemTypes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Prices" Relationship="PriceModel.FK_dbo_Price_dbo_UserProfile_Id" FromRole="UserProfile" ToRole="Price" />
+        </EntityType>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Prices" Relationship="PriceModel.FK_dbo_Price_dbo_Currency_Id" FromRole="Currency" ToRole="Price" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ItemTypeId" Nullable="false" />
+          <NavigationProperty Name="ItemType" Relationship="PriceModel.FK_dbo_Item_dbo_ItemType_Id" FromRole="Item" ToRole="ItemType" />
+          <NavigationProperty Name="Prices" Relationship="PriceModel.FK_dbo_Price_dbo_Item_Id" FromRole="Item" ToRole="Price" />
+        </EntityType>
+        <EntityType Name="ItemType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ParentId" />
+          <NavigationProperty Name="Items" Relationship="PriceModel.FK_dbo_Item_dbo_ItemType_Id" FromRole="ItemType" ToRole="Item" />
+          <NavigationProperty Name="ItemType1" Relationship="PriceModel.FK_dbo_ItemType_dbo_ItemType_ParentId" FromRole="ItemType" ToRole="ItemType1" />
+          <NavigationProperty Name="ItemType2" Relationship="PriceModel.FK_dbo_ItemType_dbo_ItemType_ParentId" FromRole="ItemType1" ToRole="ItemType" />
+        </EntityType>
+        <EntityType Name="Price">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Double" Name="Value" Nullable="false" />
+          <Property Type="Int32" Name="ItemId" Nullable="false" />
+          <Property Type="Int32" Name="CurrencyId" Nullable="false" />
+          <Property Type="Int32" Name="UploadByUserId" Nullable="false" />
+          <Property Type="DateTime" Name="UploadDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="EffStartDate" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="EffEndDate" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Currency" Relationship="PriceModel.FK_dbo_Price_dbo_Currency_Id" FromRole="Price" ToRole="Currency" />
+          <NavigationProperty Name="Item" Relationship="PriceModel.FK_dbo_Price_dbo_Item_Id" FromRole="Price" ToRole="Item" />
+          <NavigationProperty Name="UserProfile" Relationship="PriceModel.FK_dbo_Price_dbo_UserProfile_Id" FromRole="Price" ToRole="UserProfile" />
+        </EntityType>
+        <Association Name="FK_dbo_Price_dbo_Currency_Id">
+          <End Type="PriceModel.Currency" Role="Currency" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="PriceModel.Price" Role="Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Currency">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="CurrencyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Item_dbo_ItemType_Id">
+          <End Type="PriceModel.ItemType" Role="ItemType" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="PriceModel.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="ItemTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Price_dbo_Item_Id">
+          <End Type="PriceModel.Item" Role="Item" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="PriceModel.Price" Role="Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_Price_dbo_UserProfile_Id">
+          <End Type="PriceModel.UserProfile" Role="UserProfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="PriceModel.Price" Role="Price" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Price">
+              <PropertyRef Name="UploadByUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_ItemType_dbo_ItemType_ParentId">
+          <End Type="PriceModel.ItemType" Role="ItemType" Multiplicity="0..1" />
+          <End Type="PriceModel.ItemType" Role="ItemType1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ItemType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ItemType1">
+              <PropertyRef Name="ParentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PriceModelStoreContainer" CdmEntityContainer="PriceEntities">
+          <EntitySetMapping Name="UserProfiles">
+            <EntityTypeMapping TypeName="PriceModel.UserProfile">
+              <MappingFragment StoreEntitySet="UserProfile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Currencies">
+            <EntityTypeMapping TypeName="PriceModel.Currency">
+              <MappingFragment StoreEntitySet="Currency">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Items">
+            <EntityTypeMapping TypeName="PriceModel.Item">
+              <MappingFragment StoreEntitySet="Item">
+                <ScalarProperty Name="ItemTypeId" ColumnName="ItemTypeId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ItemTypes">
+            <EntityTypeMapping TypeName="PriceModel.ItemType">
+              <MappingFragment StoreEntitySet="ItemType">
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prices">
+            <EntityTypeMapping TypeName="PriceModel.Price">
+              <MappingFragment StoreEntitySet="Price">
+                <ScalarProperty Name="EffEndDate" ColumnName="EffEndDate" />
+                <ScalarProperty Name="EffStartDate" ColumnName="EffStartDate" />
+                <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+                <ScalarProperty Name="UploadByUserId" ColumnName="UploadByUserId" />
+                <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

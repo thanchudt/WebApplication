@@ -1,0 +1,64 @@
+﻿@model PriceDataLib.Price
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Price</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Value)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Value)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Item.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Item.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Currency.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Currency.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserProfile.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserProfile.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UploadDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UploadDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EffStartDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EffStartDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EffEndDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EffEndDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

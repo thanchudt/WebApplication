@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="80bc0557f7274d64b2364cc11296cbbd" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="PriceModel.UserProfile" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PriceModel.Currency" Width="1.5" PointX="11.426190213964409" PointY="14.922063417230762" />
+        <EntityTypeShape EntityType="PriceModel.Item" Width="1.5" PointX="2.8126566479041504" PointY="22.243808786498295" />
+        <EntityTypeShape EntityType="PriceModel.ItemType" Width="1.5" PointX="2.4874155868251879" PointY="27.407309708840824" />
+        <EntityTypeShape EntityType="PriceModel.Price" Width="1.5" PointX="8.380300605846708" PointY="10.895020042962869" />
+        <AssociationConnector Association="PriceModel.FK_dbo_Price_dbo_Currency_Id" />
+        <AssociationConnector Association="PriceModel.FK_dbo_Item_dbo_ItemType_Id" />
+        <AssociationConnector Association="PriceModel.FK_dbo_Price_dbo_Item_Id" />
+        <AssociationConnector Association="PriceModel.FK_dbo_Price_dbo_UserProfile_Id" />
+        <AssociationConnector Association="PriceModel.FK_dbo_ItemType_dbo_ItemType_ParentId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

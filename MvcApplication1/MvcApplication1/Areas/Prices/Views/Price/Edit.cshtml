@@ -1,0 +1,85 @@
+﻿@model PriceDataLib.Price
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Price</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Value)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Value)
+            @Html.ValidationMessageFor(model => model.Value)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ItemId, "Item")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("ItemId", String.Empty)
+            @Html.ValidationMessageFor(model => model.ItemId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CurrencyId, "Currency")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("CurrencyId", String.Empty)
+            @Html.ValidationMessageFor(model => model.CurrencyId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UploadByUserId, "UserProfile")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("UploadByUserId", String.Empty)
+            @Html.ValidationMessageFor(model => model.UploadByUserId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UploadDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UploadDate)
+            @Html.ValidationMessageFor(model => model.UploadDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EffStartDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EffStartDate)
+            @Html.ValidationMessageFor(model => model.EffStartDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EffEndDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EffEndDate)
+            @Html.ValidationMessageFor(model => model.EffEndDate)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

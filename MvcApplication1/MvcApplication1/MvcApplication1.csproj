@@ -40,6 +40,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PriceDataLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PriceDataLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -161,6 +165,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Prices\Controllers\AllPricesController.cs" />
+    <Compile Include="Areas\Prices\Controllers\CurrencyController.cs" />
+    <Compile Include="Areas\Prices\Controllers\ItemController.cs" />
+    <Compile Include="Areas\Prices\Controllers\ItemTypeController.cs" />
+    <Compile Include="Areas\Prices\Controllers\PriceController.cs" />
+    <Compile Include="Areas\Prices\Controllers\UserProfileController.cs" />
+    <Compile Include="Areas\Prices\PricesAreaRegistration.cs" />
     <Compile Include="Areas\Shop\Controllers\BeurreAndSelController.cs" />
     <Compile Include="Areas\Shop\Controllers\StoryController.cs" />
     <Compile Include="Areas\Shop\ShopAreaRegistration.cs" />
@@ -175,6 +186,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ItemImageMapModels.cs" />
+    <Compile Include="Models\CurrencyModels.cs" />
+    <Compile Include="Models\ItemTypeModels.cs" />
+    <Compile Include="Models\ItemModels.cs" />
+    <Compile Include="Models\PriceModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +261,35 @@
     <Content Include="Areas\WorldMap\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\WorldMap\Views\_ViewStart.cshtml" />
     <Content Include="Areas\WorldMap\Views\Web.config" />
+    <Content Include="Areas\Prices\Views\Web.config" />
+    <Content Include="Areas\Prices\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Prices\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Prices\Views\AllPrices\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\UserProfile\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\UserProfile\Details.cshtml" />
+    <Content Include="Areas\Prices\Views\UserProfile\Create.cshtml" />
+    <Content Include="Areas\Prices\Views\UserProfile\Edit.cshtml" />
+    <Content Include="Areas\Prices\Views\UserProfile\Delete.cshtml" />
+    <Content Include="Areas\Prices\Views\Item\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\Item\Details.cshtml" />
+    <Content Include="Areas\Prices\Views\Item\Create.cshtml" />
+    <Content Include="Areas\Prices\Views\Item\Edit.cshtml" />
+    <Content Include="Areas\Prices\Views\Item\Delete.cshtml" />
+    <Content Include="Areas\Prices\Views\Currency\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\Currency\Details.cshtml" />
+    <Content Include="Areas\Prices\Views\Currency\Create.cshtml" />
+    <Content Include="Areas\Prices\Views\Currency\Edit.cshtml" />
+    <Content Include="Areas\Prices\Views\Currency\Delete.cshtml" />
+    <Content Include="Areas\Prices\Views\Price\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\Price\Details.cshtml" />
+    <Content Include="Areas\Prices\Views\Price\Create.cshtml" />
+    <Content Include="Areas\Prices\Views\Price\Edit.cshtml" />
+    <Content Include="Areas\Prices\Views\Price\Delete.cshtml" />
+    <Content Include="Areas\Prices\Views\ItemType\Index.cshtml" />
+    <Content Include="Areas\Prices\Views\ItemType\Details.cshtml" />
+    <Content Include="Areas\Prices\Views\ItemType\Create.cshtml" />
+    <Content Include="Areas\Prices\Views\ItemType\Edit.cshtml" />
+    <Content Include="Areas\Prices\Views\ItemType\Delete.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\backgrounds\backgrounds_cookie_02.jpg" />
     <Content Include="Images\backgrounds\backgrounds_cookie_03.jpg" />
@@ -282,7 +327,9 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -325,6 +372,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Prices\Models\" />
     <Folder Include="Areas\Shop\Models\" />
     <Folder Include="Areas\WorldMap\Models\" />
   </ItemGroup>
