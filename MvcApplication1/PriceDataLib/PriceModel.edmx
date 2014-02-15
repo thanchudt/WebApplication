@@ -67,6 +67,7 @@
           <Property Name="UpdateDate" Type="datetime" Nullable="false" />
           <Property Name="EffStartDate" Type="datetime" Nullable="false" />
           <Property Name="EffEndDate" Type="datetime" Nullable="false" />
+          <Property Name="Source" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="UserProfile">
           <Key>
@@ -224,6 +225,7 @@
           <NavigationProperty Name="Item" Relationship="PriceModel.FK_dbo_Price_dbo_Item_Id" FromRole="Price" ToRole="Item" />
           <NavigationProperty Name="UserProfile" Relationship="PriceModel.FK_dbo_Price_dbo_UserProfile_Id" FromRole="Price" ToRole="UserProfile" />
           <Property Type="DateTime" Name="UpdateDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="Source" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_dbo_Price_dbo_Currency_Id">
           <End Type="PriceModel.Currency" Role="Currency" Multiplicity="1">
@@ -336,6 +338,7 @@
           <EntitySetMapping Name="Prices">
             <EntityTypeMapping TypeName="PriceModel.Price">
               <MappingFragment StoreEntitySet="Price">
+                <ScalarProperty Name="Source" ColumnName="Source" />
                 <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
                 <ScalarProperty Name="EffEndDate" ColumnName="EffEndDate" />
                 <ScalarProperty Name="EffStartDate" ColumnName="EffStartDate" />

@@ -22,6 +22,7 @@ namespace PriceDataLib
         public System.DateTime EffStartDate { get; set; }
         public System.DateTime EffEndDate { get; set; }
         public System.DateTime UpdateDate { get; set; }
+        public string Source { get; set; }
     
         public virtual Currency Currency { get; set; }
         public virtual Item Item { get; set; }

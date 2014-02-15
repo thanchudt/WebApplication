@@ -36,9 +36,10 @@ CREATE TABLE [dbo].[Price] (
     [ItemId]         INT        NOT NULL,
     [CurrencyId]     INT        NOT NULL,
     [UploadByUserId] INT        NOT NULL,
-    [UpdateDate]     DATETIME   NOT NULL,
+	[UpdateDate]     DATETIME   NOT NULL,
     [EffStartDate]   DATETIME   NOT NULL,
     [EffEndDate]     DATETIME   NOT NULL,
+	[Source]         NVARCHAR (MAX) NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC),
     CONSTRAINT [FK_dbo.Price_dbo.Currency_Id] FOREIGN KEY ([CurrencyId]) REFERENCES [dbo].[Currency] ([Id]) ON DELETE CASCADE,
     CONSTRAINT [FK_dbo.Price_dbo.UserProfile_Id] FOREIGN KEY ([UploadByUserId]) REFERENCES [dbo].[UserProfile] ([UserId]) ON DELETE CASCADE,
@@ -48,4 +49,5 @@ CREATE TABLE [dbo].[Price] (
 --ALTER TABLE UserProfile alter column UserName NVARCHAR (256) NOT NULL
 --ALTER TABLE UserProfile
 --ADD UNIQUE (UserName)
+--ALTER TABLE [dbo].[Price] add [Source]	     NVARCHAR (MAX)        NULL
 
