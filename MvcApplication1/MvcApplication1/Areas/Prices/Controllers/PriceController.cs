@@ -43,7 +43,8 @@ namespace MvcApplication1.Areas.Prices.Controllers
             ViewBag.CurrencyId = new SelectList(db.Currencies, "Id", "Name");
             ViewBag.ItemId = new SelectList(db.Items, "Id", "Name");
             ViewBag.UploadByUserId = new SelectList(db.UserProfiles, "UserId", "UserName");
-            ViewBag.EffStartDate = DateTime.Now;
+            var now = DateTime.Now;
+            ViewBag.EffStartDate = new DateTime(now.Year, now.Month, now.Day);
             ViewBag.EffEndDate = DateTime.MaxValue;
             return View();
         }
@@ -57,17 +58,26 @@ namespace MvcApplication1.Areas.Prices.Controllers
             var now = DateTime.Now;
             if (ModelState.IsValid)
             {
-                //Cut off
-                //var currentEffPrices = db.Prices.Where(p => p.ItemId == price.ItemId && p.EffStartDate <= now && p.EffEndDate >= DateTime.MaxValue);
-                //foreach (var p in currentEffPrices)
-                //    p.EffEndDate = now.AddDays(-1);
-                price.UpdateDate = now;
-                //price.EffStartDate = price.EffStartDate == null ? now : price.EffStartDate;
-                //price.EffEndDate = price.EffEndDate == null ? DateTime.MaxValue : price.EffEndDate;
-                //price.EffStartDate = now;
-                //price.EffEndDate = DateTime.MaxValue;
-                db.Prices.Add(price);
-                db.SaveChanges();
+                //Check if existing in database
+                if (db.Prices.Where(p => p.ItemId == price.ItemId
+                    && p.Source == price.Source
+                    && p.Value == price.Value
+                    && p.CurrencyId == price.CurrencyId
+                    && p.EffStartDate == price.EffStartDate
+                    && p.EffEndDate == price.EffEndDate).FirstOrDefault() == null)
+                {
+                    //Cut off
+                    //var currentEffPrices = db.Prices.Where(p => p.ItemId == price.ItemId && p.EffStartDate <= now && p.EffEndDate >= DateTime.MaxValue);
+                    //foreach (var p in currentEffPrices)
+                    //    p.EffEndDate = now.AddDays(-1);
+                    price.UpdateDate = now;
+                    //price.EffStartDate = price.EffStartDate == null ? now : price.EffStartDate;
+                    //price.EffEndDate = price.EffEndDate == null ? DateTime.MaxValue : price.EffEndDate;
+                    //price.EffStartDate = now;
+                    //price.EffEndDate = DateTime.MaxValue;
+                    db.Prices.Add(price);
+                    db.SaveChanges();
+                }
                 return RedirectToAction("Index");
             }
 
