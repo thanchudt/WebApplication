@@ -43,6 +43,8 @@ namespace MvcApplication1.Areas.Prices.Controllers
             ViewBag.CurrencyId = new SelectList(db.Currencies, "Id", "Name");
             ViewBag.ItemId = new SelectList(db.Items, "Id", "Name");
             ViewBag.UploadByUserId = new SelectList(db.UserProfiles, "UserId", "UserName");
+            ViewBag.EffStartDate = DateTime.Now;
+            ViewBag.EffEndDate = DateTime.MaxValue;
             return View();
         }
 
@@ -52,8 +54,18 @@ namespace MvcApplication1.Areas.Prices.Controllers
         [HttpPost]
         public ActionResult Create(Price price)
         {
+            var now = DateTime.Now;
             if (ModelState.IsValid)
             {
+                //Cut off
+                //var currentEffPrices = db.Prices.Where(p => p.ItemId == price.ItemId && p.EffStartDate <= now && p.EffEndDate >= DateTime.MaxValue);
+                //foreach (var p in currentEffPrices)
+                //    p.EffEndDate = now.AddDays(-1);
+                price.UpdateDate = now;
+                //price.EffStartDate = price.EffStartDate == null ? now : price.EffStartDate;
+                //price.EffEndDate = price.EffEndDate == null ? DateTime.MaxValue : price.EffEndDate;
+                //price.EffStartDate = now;
+                //price.EffEndDate = DateTime.MaxValue;
                 db.Prices.Add(price);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -87,8 +99,10 @@ namespace MvcApplication1.Areas.Prices.Controllers
         [HttpPost]
         public ActionResult Edit(Price price)
         {
+            var now = DateTime.Now;
             if (ModelState.IsValid)
             {
+                price.UpdateDate = now;
                 db.Entry(price).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

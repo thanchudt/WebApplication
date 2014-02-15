@@ -19,9 +19,9 @@ namespace PriceDataLib
         public int ItemId { get; set; }
         public int CurrencyId { get; set; }
         public int UploadByUserId { get; set; }
-        public System.DateTime UploadDate { get; set; }
         public System.DateTime EffStartDate { get; set; }
         public System.DateTime EffEndDate { get; set; }
+        public System.DateTime UpdateDate { get; set; }
     
         public virtual Currency Currency { get; set; }
         public virtual Item Item { get; set; }
